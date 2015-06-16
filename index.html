@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Drop down form</title>
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="animation.js"></script>
+</head>
+<body>
+   
+   <form name="myForm" onsubmit="return validationForm();" action="#">
+       <ul>
+           <li class="title">Who are you?</li>
+           <li class="fields">
+                   <label for="firstName">*First name:</label><br/>
+               <label>
+                   <input class="check" name="firstName" id="firstName" type="text" class="req" placeholder="Please enter your info" required><br/>
+                </label>
+                   <label class="check" for="middleName">Middle Name:</label><br/>
+               <label>
+                   <input class="check" name="middleName" id="middleName" type="text"><br/>
+               </label>
+                   <label for="lastName">*Last name:</label><br/>
+               <label>
+                   <input class="check" name="lastName" id="lastName" type="text" class="req" required placeholder="Please enter your info"><br/>
+               </label>
+                   <label for="eMail">*Email:</label><br/>
+               <label>
+                   <input class="check" name="eMail" id="eMail" type="email" class="req" required placeholder="Please enter your info"><br/>
+                </label>
+           </li><br/>
+           <li class="title">Where are you</li>
+           <li class="fields">
+                   <label for="city">*City:</label><br/>
+               <label>
+                   <input class="check" name="city" id="city" type="text" class="req" required placeholder="Please enter your info"><br/>
+               </label>
+                   <label for="state">State:</label><br/>
+               <label>
+                   <input class="check" name="state" id="state" type="text"><br/>
+                </label>
+               <label for="country">*Country:</label><br/>
+               <label>
+                   <input class="check" name="country" id="country" type="text" class="req" required placeholder="Please enter your info"><br/>
+               </label>
+           </li><br/>
+           <li class="title">What do you do?</li>
+           <li class="fields">
+                   <label for="occupation">*Occupation:</label><br/>
+               <label>
+                   <input class="check" name="occupation" id="occupation" type="text" class="req" required placeholder="Please enter your info"><br/>
+                </label>
+                   <label for="company">Company:</label><br/>
+               <label>
+                   <input class="check" name="company" id="company" type="text"><br/>
+               </label>
+                   <label for="companyLocation">Company location:</label><br/>
+               <label>
+                   <input class="check" name="companyLocation" id="companyLocation" type="text"><br/>
+               </label>
+               <label><br/>
+                   <input name="submit" type="submit" value="submit">
+                </label>
+           </li>
+       </ul>
+       
+   </form>
+    
+</body>
+</html>
